@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0f2ed"
+    tools:context=".MainActivity" >
+
+    <!-- This is the settings, logo, and navigation layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#57a1ac" >
+
+        <ImageView
+            android:src="@drawable/setting_cog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+             />
+        <ImageView
+            android:src="@drawable/slumbook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:src="@drawable/burger_nav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            />
+    </LinearLayout>
+
+    <!-- This is the date and friends responded layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#cfd4d5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Monday, Nov. 16/18"
+            />
+        <ImageView
+            android:src="@drawable/icon_responded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="11dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="36/120"
+            />
+    </LinearLayout>
+
+    <!-- This is the question box - may need to adjust the height here. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="28dp"
+            android:textSize="22sp"
+            android:textColor="#494949"
+            android:textStyle="bold"
+            android:lineSpacingExtra="6dp"
+            android:text="Where do you see yourself in five years from now?"
+            />
+    </LinearLayout>
+
+    <!-- This is tally marks for previous responses and share button. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fff" >
+
+        <ImageView
+            android:src="@drawable/icon_ticks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:background="#fff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:text=""
+            />
+
+        <ImageView
+            android:src="@drawable/icon_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            />
+    </LinearLayout>
+
+    <!-- This is profile img, answer button, bubble bottom, expand button. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#57a1ac" >
+
+        <ImageView
+            android:src="@drawable/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            />
+
+        <EditText
+            android:background="#9ff0fc"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="24dp"
+            android:hint="Type Your Answer..."
+            />
+
+        <ImageView
+            android:src="@drawable/shark_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="0dp"
+            />
+
+        <ImageView
+            android:src="@drawable/icon_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+    <!-- This is the Friends header with lots of space for answer expand. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp"
+            android:textColor="#57a1ac"
+            android:textStyle="bold"
+            android:text="Friends (180)"
+            />
+        <ImageView
+            android:src="@drawable/shark_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            />
+    </LinearLayout>
+
+    <!-- This is profile bar #1. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <ImageView
+            android:src="@drawable/profile_emmastone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#57a1ac"
+            android:textStyle="bold"
+            android:text="Emma Stone"
+            />
+        <ImageView
+            android:src="@drawable/icon_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+        <ImageView
+            android:src="@drawable/icon_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+    </LinearLayout>
+
+    <!-- This is an XML HR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+        <TextView
+            android:text="" />
+    </LinearLayout>
+
+    <!-- This is profile bar 2. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <ImageView
+            android:src="@drawable/profile_bradpitt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#57a1ac"
+            android:textStyle="bold"
+            android:text="Brad Pitt"
+            />
+        <ImageView
+            android:src="@drawable/icon_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+        <ImageView
+            android:src="@drawable/icon_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+    </LinearLayout>
+
+    <!-- This is an XML HR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+        <TextView
+            android:text="" />
+    </LinearLayout>
+
+    <!-- This is profile bar #3. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <ImageView
+            android:src="@drawable/profile_ladygaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#57a1ac"
+            android:textStyle="bold"
+            android:text="Lady Gaga (Joanne)"
+            />
+        <ImageView
+            android:src="@drawable/icon_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+        <ImageView
+            android:src="@drawable/icon_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            />
+    </LinearLayout>
+
+    <!-- This is an XML HR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+        <TextView
+            android:text="" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
