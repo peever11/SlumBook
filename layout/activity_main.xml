@@ -244,7 +244,9 @@
         android:layout_height="2dp">
 
         <TextView
-            android:text="" />
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
     </LinearLayout>
 
     <!-- This is profile bar 2. -->
@@ -295,7 +297,9 @@
         android:layout_height="2dp">
 
         <TextView
-            android:text="" />
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
     </LinearLayout>
 
     <!-- This is profile bar #3. -->
@@ -346,7 +350,9 @@
         android:layout_height="2dp">
 
         <TextView
-            android:text="" />
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
     </LinearLayout>
 
 
